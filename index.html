@@ -2,7 +2,7 @@
 <html lang="fr"> 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sass\style.css">
         <link rel="preconnect" href="">
         <link href="" rel="stylesheet">
         <Title>Ohmyfood</Title>
@@ -14,7 +14,7 @@
         
       
         <header class="Header">
-          <a class="Header-Logo" href="index.html" > 
+          <a class="Header__Logo" href="index.html" > 
               <img src="img\logo\ohmyfood.png" alt="logo de oh my food" class="Logo">
           </a>
         </header>
@@ -22,105 +22,105 @@
         <main>
           <section class="Localisation">
             <i class="fas fa-map-marker-alt local__icon"></i>
-            <span class="Localisation_Text">Paris, Belleville</span>
+            <span class="Localisation__Text">Paris, Belleville</span>
           </section>
       
           <section class="Intro">
-            <h2 class="Intro_Title">Réservez le menu qui<br>vous convient</h2>
-            <p class="Intro_Subtitle">
+            <h2 class="Intro__Title">Réservez le menu qui<br>vous convient</h2>
+            <p class="Intro__Subtitle">
               Découvrez des restaurants d'exception, séléctionnés par nos soins
             </p>
-            <a class="Intro_Button">
+            <a class="Intro__Button">
               Explorer nos restaurants
             </a>
           </section>
       
           <section class="Fonctionnement">
-            <div class="F_Container">
-              <h2 class="F_Title">Fonctionnement</h2>
-              <ol class="F_Steps">
-                <li class="F_Step">
-                  <i class="F_Icon fas fa-mobile-alt"></i>
-                  <span class="F_Text">Choisissez un restaurant</span>
+            <div class="F__Container">
+              <h2 class="F__Title">Fonctionnement</h2>
+              <ol class="F__Steps">
+                <li class="F__Step">
+                  <i class="F__Icon fas fa-mobile-alt"></i>
+                  <span class="F__Text">Choisissez un restaurant</span>
                 </li>
-                <li class="F_Step">
-                  <i class="F_Icon fas fa-list-ul"></i>
-                  <span class="F_Text">Composez votre menu</span>
+                <li class="F__Step">
+                  <i class="F__Icon fas fa-list-ul"></i>
+                  <span class="F__Text">Composez votre menu</span>
                 </li>
-                <li class="F_Step">
-                  <i class="F_Icon fas fa-store"></i>
-                  <span class="F_Text">Dégustez au restaurant</span>
+                <li class="F__Step">
+                  <i class="F__Icon fas fa-store"></i>
+                  <span class="F__Text">Dégustez au restaurant</span>
                 </li>
               </ol>
             </div>
           </section>
       
           <section class="Restaurants" >
-            <div class="R_Container">
-              <h2 class="R_Title">Restaurants</h2>
+            <div class="Restaurants__Container">
+              <h2 class="Restaurants__Title">Restaurants</h2>
               
-              <div class="R_Cards">
-                <a class="R_Card" href=" "><!-- lien de la page--> 
+              <div class="Restaurants__Cards">
+                <a class="Restaurants__Card" href=" "><!-- lien de la page--> 
                   <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="R_Img">
-                  <span class="R_Badge">Nouveau</span>
-                  <footer class="R_Card_Footer">
-                    <div class="R_Card_Content">
-                      <h3 class="R_Card_Title">La palette du goût</h3>
-                      <span class="R_Card_Subtitle">Ménilmontant</span>
+                  <span class="Restaurants__Badge">Nouveau</span>
+                  <footer class="Restaurants__Card__Footer">
+                    <div class="Restaurants__Card__Content">
+                      <h3 class="Restaurants__Cards__Title">La palette du goût</h3>
+                      <span class="Restaurants__Card__Subtitle">Ménilmontant</span>
                     </div>
-                    <div class="Button_Heart">
-                      <i class="Button_Heart_Vide far fa-heart fa-2x"></i>
-                      <i class="Button_Heart_Rempli fas fa-heart fa-2x"></i>
-                      <!-- 2 coueurs pour prévoir l'effet de remplissage-->
+                    <div class="Button__Heart">
+                      <i class="Button__Heart__Vide far fa-heart fa-2x"></i>
+                     <!-- <i class="Button__Heart__Rempli fas fa-heart fa-2x"></i>
+                       2 coueurs pour prévoir l'effet de remplissage-->
                     </div>
                     
                   </footer>
                 </a>
           
-                <a class="R_Card" href=" "><!-- lien de la page-->
+                <a class="Restaurants__Card" href=" "><!-- lien de la page-->
                   <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="R_Img">
-                  <span class="R_Badge">Nouveau</span>
-                  <footer class="R_Card_Footer">
-                    <div class="R_Card_Content">
-                      <h3 class="R_Card_Title">La note enchantée</h3>
-                      <span class="R_Card_Subtitle">Charonne</span>
+                  <span class="Restaurants__Badge">Nouveau</span>
+                  <footer class="Restaurants__Card__Footer">
+                    <div class="Restaurants__Card__Content">
+                      <h3 class="Restaurants__Card__Title">La note enchantée</h3>
+                      <span class="Restaurants__Card__Subtitle">Charonne</span>
                     </div>
-                    <div class="Button_Heart">
-                      <i class="Button_Heart_Vide far fa-heart fa-2x"></i>
-                      <i class="Button_Heart_Rempli fas fa-heart fa-2x"></i>
-                      <!-- 2 coueurs pour prévoir l'effet de remplissage-->
+                    <div class="Button__Heart">
+                      <i class="Button__Heart__Vide far fa-heart fa-2x"></i>
+                       <!--<i class="Button__Heart__Rempli fas fa-heart fa-2x"></i>
+                      2 coueurs pour prévoir l'effet de remplissage-->
                     </div>
                   </footer>
                 </a>
           
-                <a class="R_Card" href=" "><!-- lien de la page-->
+                <a class="Restaurants__Card" href=" "><!-- lien de la page-->
                   <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="R_Img">
-                  <!-- <span class="R_Badge">Nouveau</span> -->
-                  <footer class="R_Card_Footer">
-                    <div class="R_Card_Content">
-                      <h3 class="R_Card_Title">À la française</h3>
-                      <span class="R_Card_Subtitle">Cité Rouge</span>
+                  <!-- <span class="Restaurants__Badge">Nouveau</span> -->
+                  <footer class="Restaurants__Card__Footer">
+                    <div class="Restaurants__Card__Content">
+                      <h3 class="Restaurants__Card__Title">À la française</h3>
+                      <span class="Restaurants__Card__Subtitle">Cité Rouge</span>
                     </div>
-                    <div class="Button_Heart">
-                      <i class="Button_Heart_Vide far fa-heart fa-2x"></i>
-                      <i class="Button_Heart_Rempli fas fa-heart fa-2x"></i>
-                      <!-- 2 coueurs pour prévoir l'effet de remplissage-->
+                    <div class="Button__Heart">
+                      <i class="Button__Heart__Vide far fa-heart fa-2x"></i>
+                      <!-- <i class="Button__Heart__Rempli fas fa-heart fa-2x"></i>
+                      2 coueurs pour prévoir l'effet de remplissage-->
                     </div>
                   </footer>
                 </a>
           
-                <a class="R_Card" href=" "><!-- lien de la page-->
+                <a class="Restaurants__Card" href=" "><!-- lien de la page-->
                   <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="R_Img">
                   <!-- <span class="R_Badge">Nouveau</span> -->
-                  <footer class="R_Card_Footer">
-                    <div class="R_Card_Content">
-                      <h3 class="R_Card_Title">Le délice des sens</h3>
-                      <span class="R_Card_Subtitle">Folie-Méricourt</span>
+                  <footer class="Restaurants__Card__Footer">
+                    <div class="Restaurants__Card__Content">
+                      <h3 class="Restaurants__Card__Title">Le délice des sens</h3>
+                      <span class="Restaurants__Card__Subtitle">Folie-Méricourt</span>
                     </div>
-                    <div class="Button_Heart">
-                      <i class="Button_Heart_Vide far fa-heart fa-2x"></i>
-                      <i class="Button_Heart_Rempli fas fa-heart fa-2x"></i>
-                      <!-- 2 coueurs pour prévoir l'effet de remplissage-->
+                    <div class="Button__Heart">
+                      <i class="Button__Heart__Vide far fa-heart fa-2x"></i>
+                       <!--<i class="Button__Heart__Rempli fas fa-heart fa-2x"></i>
+                      2 coueurs pour prévoir l'effet de remplissage-->
                     </div>
                   </footer>
                 </a>
@@ -130,21 +130,21 @@
         </main>
       
         <footer class="Footer">
-          <div class="F_Container">
-            <span class="F_Logo">ohmyfood</span>
-            <ul class="F_Nav">
-              <li class="F_Nav_li">
-                <a class="F_link" href="#"><i class="F_Icon fas fa-utensils"></i>Proposer un restaurant</a>
+          <div class="Footer__Container">
+            <span class="Footer__Logo">ohmyfood</span>
+            <ul class="Footer__Nav">
+              <li class="Footer__Nav__li">
+                <a class="Footer__link" href="#"><i class="Footer__Icon fas fa-utensils"></i>Proposer un restaurant</a>
               </li>
-              <li class="F_Nav_li">
-                <a class="F_link" href="#"><i class=F_Icon fas fa-hands-helping></i> Devenir partenaire</a>
+              <li class="Footer__Nav__li">
+                <a class="Footer__link" href="#"><i class=Footer__Icon fas fa-hands-helping></i> Devenir partenaire</a>
               </li>
               
-              <li class="F_Nav_li">
-                <a class="F_link" href="#">Mentions légales</a>
+              <li class="Footer__Nav__li">
+                <a class="Footer__link" href="#">Mentions légales</a>
               </li>
-              <li class="F_Nav_li">
-                <a class="F_link" href="mailto:email@mehdibh.com">Contact</a>
+              <li class="Footer__Nav__li">
+                <a class="Footer__link" href="mailto:email@mehdibh.com">Contact</a>
               </li>
             </ul>
           </div>
