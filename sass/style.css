@@ -1,8 +1,149 @@
-body {
-  background: grey;
+/*@use "sass:color"*/
+.Localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.25rem 1rem;
+  background-color: #f3f3f3;
+  font-size: 1.2rem;
+  position: relative;
 }
 
-p {
-  color: blue;
+.Localisation__Icon {
+  margin-right: 1rem;
+}
+
+.Localisation__Text {
+  font-weight: 700;
+}
+
+.Intro {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.Intro__Title {
+  margin: 0;
+}
+
+.Intro__Subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.Intro__Btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
+.Intro__Btn:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.Intro__Btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+}
+
+.Restaurants__Cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Restaurants__Card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.Restaurants__Img {
+  height: 10rem;
+  width: 25rem;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Restaurants__Badge {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+.Restaurants__Card__footer {
+  padding: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Restaurants__Card__Title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.Restaurants__Card__Subtitle {
+  margin: 0;
+}
+
+.Restaurants .Button__Heart {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Restaurants .Button__Heart__Vide {
+  background-color: white !important;
 }
 /*# sourceMappingURL=style.css.map */

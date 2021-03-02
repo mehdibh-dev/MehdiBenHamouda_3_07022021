@@ -1,2 +1,157 @@
-body{background: grey;}
-p{color:blue}
+/*@use "sass:color"*/
+
+
+$Primaire:#9356DC;
+$Secondaire:#FF79DA;
+$Tertiaire:#99E2D0;
+
+$Padding:1rem;
+
+
+
+@mixin button {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background: linear-gradient(175deg, $Secondaire, $Primaire);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  
+    &:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+
+
+
+.Localisation {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem $Padding;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+  
+    &__Icon {
+      margin-right: 1rem;
+    }
+  
+    &__Text {
+      font-weight: 700;
+    }
+  }
+  
+  .Intro {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  
+    &__Title {
+      margin: 0;
+    }
+  
+    &__Subtitle {
+      font-weight: 300;
+      margin: 1.5rem 0;
+    }
+  
+    &__Btn {
+      @include button;
+    }
+  }
+
+
+
+  .Restaurants {
+    background-color: #f6f6f6;
+    padding: ($Padding + 1rem) $Padding;
+
+    &__Container{}
+
+    &__Title {}
+  
+    &__Cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }           
+  
+    &__Card {
+        background-color: white;
+        border-radius: 1rem;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        }
+                    
+    &__Img {
+        height: 10rem;
+        width: 25rem;
+        border: transparent solid 0px;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+        }
+  
+    &__Badge {
+        background-color: $Tertiaire;
+        color: darken($Tertiaire, 50%);
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+        }
+  
+    &__Card__footer {
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        }
+  
+    &__Card__Content {
+        
+        }
+  
+    &__Card__Title {
+        margin: 0;
+        margin-bottom: 0.25rem;
+        }
+  
+    &__Card__Subtitle {
+        margin: 0;
+        }
+
+  
+    .Button__Heart {
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        border: transparent 0px solid;
+        padding: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+  
+        &__Vide {
+            background-color: white!important;
+            }
+            &__Rempli{
+
+            }
+        }
+    }
