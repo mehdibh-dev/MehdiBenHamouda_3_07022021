@@ -8,33 +8,6 @@ $Tertiaire:#99E2D0;
 $Padding:1rem;
 
 
-
-@mixin button {
-    border: 0;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    color: white;
-    background: linear-gradient(175deg, $Secondaire, $Primaire);
-    cursor: pointer;
-    transition-duration: 0.25s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  
-    &:hover {
-      background-color: white;
-      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-    }
-  
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-
-
-
-
 .Localisation {
     display: flex;
     justify-content: center;
@@ -86,7 +59,7 @@ $Padding:1rem;
         justify-content: space-around;
         flex-wrap: wrap;
     }           
-  
+   
     &__Card {
         background-color: white;
         border-radius: 1rem;

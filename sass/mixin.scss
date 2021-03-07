@@ -1,0 +1,16 @@
+@mixin button {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background: linear-gradient(175deg, $Secondaire, $Primaire);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  
+    &:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    }
