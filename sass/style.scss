@@ -1,5 +1,5 @@
 /*@use "sass:color"*/
-
+@import "mixin.scss";
 
 $Primaire:#9356DC;
 $Secondaire:#FF79DA;
@@ -7,6 +7,13 @@ $Tertiaire:#99E2D0;
 
 $Padding:1rem;
 
+.heroImg{
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+  
+}
 
 .Localisation {
     display: flex;
@@ -128,3 +135,9 @@ $Padding:1rem;
             }
         }
     }
+
+
+
+
+
+    

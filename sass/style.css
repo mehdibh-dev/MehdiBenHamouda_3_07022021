@@ -1,4 +1,12 @@
 /*@use "sass:color"*/
+.heroImg {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .Localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,11 +62,6 @@
   background-color: white;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.Intro__Btn a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .Restaurants {
